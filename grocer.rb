@@ -29,7 +29,7 @@ def apply_clearance(cart)
   cart.each do |ele|
     new_arr << ele if !new_arr.include?(ele)
   end
-  
+  pp new_arr
 end
 
 def checkout(cart, coupons)
