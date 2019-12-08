@@ -27,6 +27,7 @@ def apply_coupons(cart, coupons)
 def apply_clearance(cart)
  new_arr = []
   cart.each do |ele|
+    pp ele
     new_arr << ele if !new_arr.include?(ele)
   end
 end
