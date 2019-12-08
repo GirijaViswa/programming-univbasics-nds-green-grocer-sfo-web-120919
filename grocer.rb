@@ -10,7 +10,11 @@ end
 def consolidate_cart(cart)
   new_arr = []
   cart.each do |ele|
-    ele[:count] = 1
+    if new_arr.include?(ele)
+      ele[:count] += 1
+    else
+      ele[:count] = 1
+  end
     new_arr << ele
   end
   new_arr
