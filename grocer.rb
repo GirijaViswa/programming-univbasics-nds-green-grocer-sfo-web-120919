@@ -11,7 +11,9 @@ def consolidate_cart(cart)
   new_arr = []
   cart.each do |ele|
     ele[:count] = 1
+    new_arr << ele
   end
+  new_arr
 end
 
 def apply_coupons(cart, coupons)
