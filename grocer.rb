@@ -27,9 +27,12 @@ def apply_coupons(cart, coupons)
 def apply_clearance(cart)
  new_arr = []
   cart.each do |ele|
-    pp ele
-    new_arr << ele if !new_arr.include?(ele)
-  end
+    ele.each do |key,val|
+      if !new_arr.include?(key)
+        new_arr << {key=>val}
+      end
+    end
+    
 end
   pp new_arr
 end
