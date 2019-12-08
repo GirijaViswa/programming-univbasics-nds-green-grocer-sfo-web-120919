@@ -34,7 +34,7 @@ def apply_clearance(cart)
       end
     end
     
-end
+  end
   pp new_arr
 end
 
