@@ -1,9 +1,10 @@
 def find_item_by_name_in_collection(name, collection)
   collection.each do |ele|
     if  ele[item] == name
-    
+      return ele
     end
   end
+  return nil
 end
 
 def consolidate_cart(cart)
