@@ -28,8 +28,9 @@ def apply_clearance(cart)
  new_arr = []
   cart.each do |ele|
     ele.each do |key,val|
+      pp ele
       if !new_arr.include?(key)
-        new_arr << {key=>val}
+        new_arr << {key => val}
       end
     end
     
