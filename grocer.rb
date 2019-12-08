@@ -10,7 +10,7 @@ end
 def consolidate_cart(cart)
   new_arr = []
   cart.each do |ele|
-    ele[:count] = 1
+    ele[:count] += 1
     pp ele
   end
 end
